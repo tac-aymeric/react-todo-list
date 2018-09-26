@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mongo: 
+    image: 'mongo:3.6'
+  api:
+    build: api
+    ports:
+      - "1811:80"
+    environment: 
+      - "PORT=80"
+      - "DB_HOST=mongo"
+    restart: 'on-failure'
+  web:
+    build: front
+    ports:
+     - "1996:80"

@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "The TODO-list API",
+  "main": "index.js",
+  "author": "Aymeric ROBINI",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-joi-validation": "^0.2.1",
+    "express-routemap": "^1.1.0",
+    "http-errors": "^1.7.1",
+    "joi": "^13.6.0",
+    "mongoose": "^5.2.17",
+    "morgan": "^1.9.1"
+  },
+  "scripts": {
+    "dev": "node -r dotenv/config src/index.js",
+    "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0"
+  }
+}
